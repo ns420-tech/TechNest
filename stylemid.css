@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF8E1; /* Light Cream Background */
+  color: #333333; /* Dark Text */
+}
+
+/* Header */
+header {
+  background-color: #1A237E; /* Navy Blue */
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #0D1445; /* Slightly darker navy */
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+nav a {
+  display: inline-block;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+  background-color: #C2185B; /* Deep Rose Hover */
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
+              url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+.btn {
+  background-color: #F48FB1; /* Soft Pink */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.3s;
+}
+.btn:hover {
+  background-color: #C2185B; /* Deep Rose Hover */
+  transform: scale(1.05);
+}
+
+/* Products Section */
+#products {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #FFF3F5; /* Very Light Pink */
+}
+.product {
+  display: inline-block;
+  width: 260px;
+  min-height: 420px;
+  margin: 15px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+}
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.desc {
+  font-size: 0.9em;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+}
+.price {
+  color: #C2185B; /* Deep Rose Price */
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+.product button {
+  background-color: #F48FB1; /* Soft Pink Button */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.product button:hover {
+  background-color: #C2185B; /* Darker Pink Hover */
+  transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+  background-color: #FEE4EC; /* Very Light Pink Background */
+  text-align: center;
+  padding: 50px 20px;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Features Section */
+#features {
+  background-color: #FEE4EC;;
+  text-align: center;
+  padding: 50px 20px;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+}
+#features h3 {
+  color: #1A237E; /* Navy Headings */
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #FEE4EC;
+  text-align: center;
+  padding: 50px 20px;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+form {
+  background: white;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+
+}
+label {
+  display: block;
+  text-align: left;
+  width: 80%;
+  max-width: 400px;
+  margin: 8px auto 4px auto;
+  color: #1A237E; /* Navy Blue for clarity */
+  font-weight: bold;
+  font-size: 1em;
+}
+form input, form textarea {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #F48FB1; /* Soft Pink */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+form button:hover {
+  background-color: #C2185B;
+  transform: scale(1.05);
+}
+form select {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Dropdown Focus & Hover Effect */
+form select:hover,
+form select:focus {
+  border-color: #C2185B; /* Deep Pink border on focus */
+  box-shadow: 0 0 6px rgba(194, 24, 91, 0.3);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #1A237E; /* Navy Footer */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+footer a {
+  color: #F48FB1; /* Pink Links */
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  color: #C2185B;
+}
